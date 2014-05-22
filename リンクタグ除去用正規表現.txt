@@ -4,7 +4,3 @@ New Test
 
  * list1
  * list2
-
-|test|test2|test3|
-|——|——|——|
-| 貝 | 雪 | 雨 |

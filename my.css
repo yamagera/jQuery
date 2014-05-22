@@ -1,0 +1,29 @@
+p.i {
+color:red;
+margin: 1.5m;
+padding: 0.5m;
+text-align: center;
+text-decoration: none;
+background: yellow;
+}
+
+
+p.b {
+color:blue;
+margin: 1.5m;
+padding: 0.5m;
+background: yellow;
+text-align: center;
+text-decoration: none;
+display: block;
+}
+
+p.ib {
+color: blue;
+display: inline-block;
+margin: 1.5m;
+padding: 0.5m;
+text-align: center;
+text-decoration: none;
+background: yellow;
+}

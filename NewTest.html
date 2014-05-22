@@ -1,0 +1,56 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+	<title>test</title>
+
+	<meta name="robots" content="noindex,follow">
+
+	<meta name="description" content="">
+
+	<meta name="keywords" content="">
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body>
+
+	<h2>リンクタグ除去用正規表現</h2>
+
+	<p>コメントタグ除去</p>
+
+	<blockquote>
+		<p>^&lt;!&#8211; <strong>(</strong>&lt;link .*/&gt;<strong>)</strong> &#8211;?&gt;</p>
+
+		<p><strong>$1</strong> </p>
+	</blockquote>
+
+	<p>( ) でマッチ部分が内部変数として記憶される。その変数を参照する記号が<strong>$</strong>。</p>
+
+	<p>上記の場合、マッチした<strong>1番目の変数</strong>を意味している。</p>
+
+	<p>例えばこんなHTML要素があれば</p>
+
+	<p>The original image is 128x128 and contains no shadow.
+		<img src="icon128.png" alt="Original icon" id="img-icon_original" title="B" /></p>
+
+		<p>It will be displayed as 96x96 with a subtle shadow.
+			<img src="icon128.png" alt="Styled icon" id="img-icon_styled" title="B" style="height:96px;width:96px;" class="shadow" /></p>
+
+			<p>Clicking this number<a href="#fn:1" id="fnref:1" title="see footnote" class="footnote">[1]</a> will lead you to a footnote.</p>
+
+			<div class="footnotes">
+				<hr />
+				<ol>
+
+					<li id="fn:1">
+						<p>Handy! Now click the return link to go back. <a href="#fnref:1" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+					</li>
+
+				</ol>
+			</div>
+
+		</body>
+
+		</html>
